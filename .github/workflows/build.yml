@@ -27,14 +27,14 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-      working-directory: CalculatorVault
+      working-directory: CalculatorValt
 
     - name: Build Debug APK
       run: ./gradlew assembleDebug
-      working-directory: CalculatorVault
+      working-directory: CalculatorValt
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
       with:
         name: app-debug
-        path: CalculatorVault/app/build/outputs/apk/debug/app-debug.apk
+        path: CalculatorValt/app/build/outputs/apk/debug/app-debug.apk
